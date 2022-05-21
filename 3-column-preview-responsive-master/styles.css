@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* RESET CSS END */
+
+
+
+/* ROOT VARIABLES */
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+/* ROOT VARIABLES END */
+
+
+
+/* BODY STYLES */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+/* BODY STYLES END */
+
+
+
+/* MAIN STYLES */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+/* MAIN STYLES END */
+
+
+
+/* CARD STYLES */
+.card__container {
+    width: 270px;
+    height: 420px;
+    color: #fff;
+    padding: 1.4rem;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+img {
+    width: 60px;
+    margin: 1.6rem 0;
+}
+
+.card__text {
+    margin-bottom: 2.2rem;
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+}
+
+.card__para {
+    color: var(--transparent-white);
+    line-height: 1.7;
+}
+
+.learn__more {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: .4rem;
+    background-color: #fff;
+    font-weight: 700;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.learn__more:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.sd {
+    color: var(--bright-orange);
+}
+
+.sv {
+    color: var(--dark-cyan);
+}
+
+.lx {
+    color: var(--very-dark-cyan);
+}
+/* CARD STYLES END */
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 420px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sedans {
+        border-top-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+
+
+/* MEDIA QUERIES END */
